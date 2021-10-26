@@ -14,7 +14,7 @@ $( document ).ready(function() {
                 $(el).show();
                 el.play();
                 $(videoElements[curvid]).on('ended', () => {
-                    $("#play-btn").attr("src","img/replay.png");
+                    $("#play-btn").attr("src","/howtoplayslingo/img/replay.png");
                     console.log("replay");
                 })
             }
@@ -68,7 +68,7 @@ $( document ).ready(function() {
     /****** BACK **********/
     $("#back-btn").on('click', () => {
         $(videoElements[curvid]).off('ended');
-        $('#play-btn').attr("src","img/pause.png");
+        $('#play-btn').attr("src","/howtoplayslingo/img/pause.png");
 
         updateVideoVisibility(curvid - 1);
         updateTutorialVisibility(curtur - 1);
@@ -77,24 +77,24 @@ $( document ).ready(function() {
         if (curvid==0) {
             $('#back-btn').prop('disabled', true);
             $('#back-btn').css({pointerEvents: "none"});
-            $('#back-btn').attr("src","img/previous-line-disabled.png");
+            $('#back-btn').attr("src","/howtoplayslingo/img/previous-line-disabled.png");
         }
         $("#next-btn").prop('disabled', false);
         $('#next-btn').css({pointerEvents: "auto"});
-        $('#next-btn').attr("src","img/next-text.png");
+        $('#next-btn').attr("src","/howtoplayslingo/img/next-text.png");
     });
 
 
     /****** PLAY **********/
     $("#play-btn").on('click', () => {
-        if($('#play-btn').attr('src') === 'img/pause.png') {
-            $('#play-btn').attr("src","img/play.png");
+        if($('#play-btn').attr('src') === '/howtoplayslingo/img/pause.png') {
+            $('#play-btn').attr("src","/howtoplayslingo/img/play.png");
             $(videoElements[curvid]).trigger('pause');
         } else {
-            $("#play-btn").attr("src","img/pause.png");
+            $("#play-btn").attr("src","/howtoplayslingo/img/pause.png");
             $(videoElements[curvid]).trigger('play');
             $(videoElements[curvid]).on('ended', () => {
-                $("#play-btn").attr("src","img/replay.png");
+                $("#play-btn").attr("src","/howtoplayslingo/img/replay.png");
                 
             })
         }
@@ -105,7 +105,7 @@ $( document ).ready(function() {
     /****** NEXT **********/
     $("#next-btn").on('click', () => {
         $(videoElements[curvid]).off('ended');
-        $('#play-btn').attr("src","img/pause.png");
+        $('#play-btn').attr("src","/howtoplayslingo/img/pause.png");
         
         updateVideoVisibility(curvid + 1);
         updateTutorialVisibility(curtur + 1);
@@ -115,24 +115,24 @@ $( document ).ready(function() {
             updateVideoVisibility(0);
             updateTutorialVisibility(0);
             updateTitleTutorialVisibility(0);
-            $('#next-btn').attr("src","img/next-text.png");
+            $('#next-btn').attr("src","/howtoplayslingo/img/next-text.png");
             $("#back-btn").prop('disabled', true);
             $('#back-btn').css({pointerEvents: "none"});
-            $('#back-btn').attr("src","img/previous-line-disabled.png");
+            $('#back-btn').attr("src","/howtoplayslingo/img/previous-line-disabled.png");
             return;
         }
         
         if(videoElements.length - 1 == curvid) {
-            $('#next-btn').attr("src","img/restart.png");
+            $('#next-btn').attr("src","/howtoplayslingo/img/restart.png");
         } else {
             $('#next-btn').prop('disabled', false);
             $('#next-btn').css({pointerEvents: "auto"});
-            $('#next-btn').attr("src","img/next-text.png");
+            $('#next-btn').attr("src","/howtoplayslingo/img/next-text.png");
         }
 
         $("#back-btn").prop('disabled', false);
         $('#back-btn').css({pointerEvents: "auto"});
-        $('#back-btn').attr("src","img/previous-line.png");
+        $('#back-btn').attr("src","/howtoplayslingo/img/previous-line.png");
     });
 });
 
