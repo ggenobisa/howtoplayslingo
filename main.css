@@ -52,7 +52,7 @@ li {list-style: none; margin: 0 10px 0 10px; color: white; text-align: left;}
     button {padding: 0;}
 
 
-    h2 {top: 5%;font-size: 20px !important;}
+    h2 {top: 5%;font-size: 20px !important;margin: 0 10px 0 0;}
 
     .tutorial-container {top: 20%;}
     .tutorial-container ul li {font-size: 16px;}
