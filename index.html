@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Slingo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/customs.js"></script>
+    
+</head>
+<body>
+
+    <div id="portrait-mode">
+        <div class="row no-gutters">
+            <div class="col-md-12 no-gutters d-flex justify-content-center align-items-center tilt-div">
+                <div>
+                    <img src="img/Tilt.gif">
+                    <h3>Turn your device in landscape mode.</h3>
+                </div>
+            </div>
+        </div>
+    </div><!--END of ID: portrait-mode-->
+
+    <div id="landscape-mode">
+        <div class="row no-gutters">
+            <div class="col-md-10 col-sm-9 no-gutters">
+                <div class="leftside">
+                    <div class="video-container">
+                        <video id="video_player" muted>
+                            <source src="Screen 1.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 2.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 3.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 4.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 5.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 6.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 7.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 8.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 9.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 10.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 11.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 12.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 13.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+            <div class="col-md-2 col-sm-3 no-gutters d-flex justify-content-center align-items-center">
+                <div class="rightside">
+                    <div class="container-content">
+                        <div class="tutorial-title-container">
+                            <ul>
+                                <li><h2>Start Game</h2></li>
+                                <li><h2>The Stake</h2></li>
+                                <li><h2>The Reel</h2></li>
+                                <li><h2>The Grid</h2></li>
+                                <li><h2>Matching Numbers</h2></li>
+                                <li><h2>The Devil</h2></li>
+                                <li><h2>Free Spin</h2></li>
+                                <li><h2>The Joker</h2></li>
+                                <li><h2>Complete a Line</h2></li>
+                                <li><h2>The Super Joker</h2></li>
+                                <li><h2>Bonus Game</h2></li>
+                                <li><h2>Collect Button</h2></li>
+                                <li><h2>Wishing Well</h2></li>
+                            </ul>
+                        </div>
+                        <div class="tutorial-container">
+                            <ul>
+                                <li>Press on <b>“START GAME”</b> button and the game will start. Each game lasts 10 spins.</li>
+                                <li>On the left of the screen, press on the arrow at the stake and select the amount you’re betting on in this game.</li>
+                                <li>This is the reel. Each spin the user will see numbers and symbols on the reel.</li>
+                                <li>This is the grid. Each spin, numbers will be marked with the aim to create lines from 5 numbers.</li>
+                                <li>Pressing the <b>“START GAME”</b> will spin the reel and give you numbers or symbols. Matching numbers on the reel will be marked on the grid.</li>
+                                <li>When you spin the reel and you get the devil symbol, it means that you lost a chance to receive a number in that slot.</li>
+                                <li>When you spin the reel and you get a free spin symbol, it means that you got another spin turn. A yellow ball will be added to the lot.</li>
+                                <li>When you spin the reel and you get a joker symbol, it means that you can chose any number to mark from the row above the joker.</li>
+                                <li>When you complete a line, it is marked on the bonus ladder on the left side. There are 12 option to complete a line.</li>
+                                <li>When you spin the reel and you get a super joker symbol, it means that you can chose any number on the grid. We need to add this text and animation here.</li>
+                                <li>When you complete 5 lines or more, you get to play the bonus games.</li>
+                                <li>In order to play the bonus game you need to press the collect button.<br><b>Remember:</b> The amount of money in the stack, that was defined in the start, is the win multiplier in a bonus games</li>
+                                <li>You can choose from 3 wishing wells to reveal a prize multiplier. This prize multiplier will be applied to the win multiplier, that was defined by user in the stack.</li>
+                            </ul>
+                        </div>
+                        <div class="control-div">
+                            <button disabled><img id="back-btn" src="img/previous-line-disabled.png" alt="back-btn"></button>
+                            <button><img id="play-btn" src="img/pause.png" alt="play-btn"></button>
+                            <button><img id="next-btn" src="img/next-text.png" alt="next-btn"></button>
+                        </div><!--END of class: control-div-->  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--END of ID: landscape-mode-->
+    
+
+    <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

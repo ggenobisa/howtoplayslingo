@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+
+#portrait-mode {display: none; background-color: black;}
+#portrait-mode .tilt-div {height: 100vh; width: 100%;}
+#portrait-mode .tilt-div div {text-align: center;}
+#portrait-mode .tilt-div h3 {color: #ffffff !important; font-weight: 800 !important; margin-top: 20px;letter-spacing: 1px;}
+
+.no-gutters {background-color: black;}
+
+.leftside, 
+.rightside {height: 100vh;width: 100%;}
+
+.leftside {position: relative;width: 100%;height: 100%;background-color: black;}
+
+.leftside video {position: absolute;top: 0;left: 0;width: 100%;height: 100vh;object-fit: fill;}
+
+.rightside {position: relative;background-color: black;}
+
+.container-content .control-div {margin-top: 80px;text-align: center; position: absolute;bottom: 30px;width: 100%;}
+
+.tutorial-container {position: absolute;top: 32%;height: 300px;}
+
+#back-btn, 
+#play-btn {width: 53px;margin: 0 auto;}
+
+#next-btn {width: 165px;margin: 0 auto;}
+
+#back-btn:hover,
+#play-btn:hover,
+#next-btn:hover {cursor: pointer;}
+
+#back-btn {pointer-events: none;}
+
+button {border: none;background-color: transparent;}
+button:focus{outline:none !important;}
+
+
+/*** Tutorial ***/
+* {font-family: 'Montserrat', sans-serif !important;}
+h2 {color: #ff3250 !important; font-weight: 700 !important;position: absolute; top: 25%; font-size: 30px !important;}
+ul {padding: 0;}
+li {list-style: none; margin: 0 10px 0 10px; color: white; text-align: left;}
+/* .tutorial-title-container ul li {display: block !important;} */
+.tutorial-container ul li {font-size: 20px;}
+
+/*** Media Queries ***/
+@media only screen and (max-device-width: 768px) {
+    #back-btn, 
+    #play-btn {width: 34px;margin: 0px;}
+    #next-btn {width: 95px;margin: 0px;}
+    .leftside video {width: 100%; height: 100%;}
+    button {padding: 0;}
+
+
+    h2 {top: 5%;font-size: 20px !important;}
+
+    .tutorial-container {top: 20%;}
+    .tutorial-container ul li {font-size: 16px;}
+}
+
+
+@media screen and (orientation:portrait) {
+    #portrait-mode {display: block;}
+    #landscape-mode {display: none;}
+}
+
+@media screen and (orientation:landscape) {
+    #portrait-mode {display: none;}
+    #landscape-mode {display: block;}
+}
